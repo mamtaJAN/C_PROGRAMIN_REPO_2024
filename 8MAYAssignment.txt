@@ -55,8 +55,3 @@ Five Fav food name=
 
 Five Fruits name=
 
-1=Mango
-2=bananan
-3=grapes
-4=watermelain
-5=chiku
