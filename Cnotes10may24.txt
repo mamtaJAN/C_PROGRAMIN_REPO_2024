@@ -1,0 +1,131 @@
+#include <stdio.h>
+
+int main()
+{
+    float a=3.4,b=2.2,c=4.1;
+    int d=9;
+    int e=2,f=4;
+    
+    float r=a+d*e-(b+c)+f;
+    
+    
+    printf("result =%f",r);
+    
+
+    return 0;
+}
+																															
+
+
+
+result =19.
+
+
+*********************
+types of operator =================================================
+- a- arthimatic operator :-
+                    -ti is a set of symbol
+					-it is used to perform some specific task
+					-ti is used to operate the value of variables
+					symbol= { + (Addition)- (substraction)*(multiplication) / (division)%(modulus/mudular)}
+					
+					
+					
+					
+-b- relational operator :- 
+ 
+                   -it is set of symbol
+                    =used for a comparision and make condition
+                   =symbols={<(less than )>(greater than )<=(less than equal to)>=(greter than equal to)==(equalto equal to)!=(not equal to)}					
+-c- asssignment operator:-
+                   - it is set of symbols
+				   -it is used to assign the value of variables
+				   -symbol:=
+				             (=)
+-d- logical operator:-
+                   -it is set symbols
+				   -it is used to check two or more condition will be true or false
+				   symbols:-   and && =>two or more condition must be true 
+				                      => T&&T: WORKING
+									  =>T&&F: NOT WORKING
+									  =>F&&T:NOT WORKING
+									  =>F&&F: NOT WORKING
+				                 or ||  => two or more condition but one condition must be true
+-                                      => T||T: WORKING  
+                                          T||F:WORKING
+							               F||T:WORKING
+                                           F||F:NOT WORKING
+
+
+
+  e- ternary operator   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ * BASIC concept 
+  
+ 1) main()
+  {
+    int a=4;
+	int a=89;
+	pf("%d",a);
+  }
+  
+  ans : error \\same variable used             
+  
+  
+ 2)  main()
+  {
+    int a=4;
+	a=89;
+	pf("%d",a);
+  }
+  
+  ans :  89  \\value a is reasign 
+  
+  
+  
+ 3)  main()
+  {
+    int a=4;
+	a=89;
+	a=1;
+	a=0;
+	pf("%d",a);
+  }
+  
+  ans : 0 \\ latest value of a will asign which is in memory on top location
+******************************************************************************************************************************************************
+  * COPY ONCEPT:=
+  main()
+  {
+  
+    int a=1;
+    int b=a;
+   pf("value of a=%d",a);
+     pf("value of b=%d",b);
+	 
+	}
+ans a=1
+    b=1
+	
+	
+	
+	HOME WORK
+	
+	
+	what is operators
+	explain type of opwerator
+	variable type of variable 
+	medium
+	
+	
