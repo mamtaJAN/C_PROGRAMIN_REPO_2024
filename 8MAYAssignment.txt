@@ -1,0 +1,62 @@
+**Five names of Friends,fruits,city,country,Fav food.*****************
+
+#include <stdio.h>
+
+int main()
+{
+    printf("Five Friends name=\n"); 
+    printf("\n1=Mamta\n2=Madhura\n3=Vaishnavin4=\n5=Amruta\n");
+    printf("\nFive Country name=\n");  
+    printf("\n1=India\n2=Pakistan\n3=china\n4=Nepal\n5=Srilanka\n");
+    
+    printf("\nFive city name=\n"); 
+    printf("\n1=Jaipur\n2=Bangloren\n3=Delhi\n4=Mumbai\n5=hyderabad\n");
+     printf("\nFive Fav food name=\n");
+     printf("\n1=pav bhaji \n2=idali\n3=paneertikha\n4=samosa\n5=khaman\n");
+     printf("\nFive Fruits name=\n");
+     printf("\n1=Mango\n2=bananan\n3=grapes\n4=watermelain\n5=chiku\n");
+
+    return 0;
+}
+
+*************************************************************************************
+OUTPUT:-
+
+Five Friends name=
+
+1=Mamta
+2=Madhura
+3=Vaishnavin4=
+5=Amruta
+
+Five Country name=
+
+1=India
+2=Pakistan
+3=china
+4=Nepal
+5=Srilanka
+
+Five city name=
+
+1=Jaipur
+2=Bangloren
+3=Delhi
+4=Mumbai
+5=hyderabad
+
+Five Fav food name=
+
+1=pav bhaji 
+2=idali
+3=paneertikha
+4=samosa
+5=khaman
+
+Five Fruits name=
+
+1=Mango
+2=bananan
+3=grapes
+4=watermelain
+5=chiku
