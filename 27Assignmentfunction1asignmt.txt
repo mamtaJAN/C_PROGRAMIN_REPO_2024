@@ -1,0 +1,1455 @@
+hello world through function :no return and no argument 
+
+
+#include <stdio.h>
+void show();
+int main()
+{
+    show();
+
+    return 0;
+}
+
+void show()
+{
+    
+    printf("\nhellow world");
+}
+
+Output:
+
+hellow world
+
+
+
+---------------------------------------------------------
+no return and no argument :user input 
+add()
+sub()
+div()
+mod()
+multi()
+
+
+#include <stdio.h>
+void add();
+void sub();
+void divi();
+void mod();
+void multi();
+
+int main()
+{
+    add();
+    sub();
+    divi();
+    mod();
+    multi();
+
+    return 0;
+}
+
+void add()
+{
+    int a,b,c;
+    printf("\nEnter the value of a=");
+    scanf("%d",&a);
+    printf("\nEnter the value of b=");
+    scanf("%d",&b);
+    c=a+b;
+    printf("addition=%d",c);
+}
+
+void sub()
+{
+    int a,b,c;
+    printf("\nEnter the value of a=");
+    scanf("%d",&a);
+    printf("\nEnter the value of b=");
+    scanf("%d",&b);
+    c=a-b;
+    printf("substraction=%d",c);
+}
+
+
+void divi()
+{
+    int a,b,c;
+    printf("\nEnter the value of a=");								
+    scanf("%d",&a);	
+    printf("\nEnter the value of b=");
+    scanf("%d",&b);
+    c=a/b;
+    printf("division=%d",c);
+}
+void mod()
+{
+    int a,b,c;
+    printf("\nEnter the value of a=");
+    scanf("%d",&a);
+    printf("\nEnter the value of b=");
+    scanf("%d",&b);
+    c=a%b;
+    printf("modular=%d",c);
+}
+
+void multi()
+{
+    int a,b,c;
+    printf("\nEnter the value of a=");
+    scanf("%d",&a);
+    printf("\nEnter the value of b=");
+    scanf("%d",&b);
+    c=a*b;
+    printf("multiplication=%d",c);
+}
+
+
+
+
+
+Output:
+Enter the value of a=5
+
+Enter the value of b=5
+addition=10
+Enter the value of a=6
+
+Enter the value of b=4
+substraction=2
+Enter the value of a=8
+
+Enter the value of b=7
+division=1
+Enter the value of a=9
+
+Enter the value of b=8
+modular=1
+Enter the value of a=5
+
+Enter the value of b=6
+multiplication=30
+
+---------------------------------------------------------
+swap() :swap 
+even() :even 
+marksheet()  :marksheet 
+electicity() :electicity 
+week() :week 
+month() :month   
+
+
+
+
+#include<stdio.h>
+void swap();
+void even(); 
+void marksheet();
+void electicity();
+void week();
+void month();
+
+int main()
+{
+    
+   swap();
+   even(); 
+    marksheet();
+    electicity();
+    week();
+   month();
+
+  return 0;
+    
+}
+
+void swap()
+{
+    
+    
+    int a=5,b=10;
+    printf("\nthe real value of a and b are\n  a=%d b=%d",a,b);
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    printf("\nAfter swaping value of a and b are \n a=%d b=%d",a,b);
+}
+void even()
+{
+    int a;
+    printf("\n\nEnter the number=");
+    scanf("%d",&a);
+    if(a%2==0)
+    {
+        
+        printf("\nEven number");
+    }
+    else
+    {
+        printf("\n not even number");
+    }
+    
+}
+
+
+void marksheet()
+{
+    int m1,m2,m3,total;
+    float per;
+    printf("\nEnter the 3 subjects marks m1 m2 m3=");
+    scanf("%d %d %d",&m1,&m2,&m3);
+    total=m1+m2+m3;
+    per=total/3;
+    printf("\nPercentage is=%f",per);
+    if(per>80)
+    {
+        printf("\nFirst division");
+    }
+    else if(per>75)
+    {
+        
+        printf("\nSecond DIvision");
+        
+    }
+    else if(per>45)
+    {
+        printf("\nFourth Division");
+    }
+    else
+    {
+        printf("\nfail");
+    }
+}
+
+
+void electicity()
+{
+    int u;
+    float a,t,charg;
+    printf("\nEnter total units consumed:\n ");
+    scanf("%d", &u);
+    if(u<= 50)
+    {
+        a=u*0.50;
+    }
+    else if(u<= 150)
+    {
+        a=25+((u-50) *0.75);
+    }
+    else if(u<= 250)
+    {
+        a=100+((u-150)*1.20);
+    }
+    else
+    {
+        a=220 +((u-250)* 1.50);
+    }
+    charg= a* 0.20;
+    t = a+ charg;
+
+    printf("\nElectricity Bill = Rs. %.2f",t);
+
+    
+}
+
+void week()
+{
+    int a;
+    printf("\n Enter the number\n");
+   scanf("%d",&a);
+   if(a==1)
+   {
+      printf("\nSunday"); 
+      
+   }
+    else if(a==2)
+   {
+      printf("\n Monday");
+   }
+      else if(a==3)
+   {
+      printf("\nTuesday"); 
+      
+   }
+    else if(a==4)
+   {
+      printf("\nWednesday"); 
+      
+   }
+    else if(a==5)
+   {
+      printf("\nThrusday"); 
+      
+   }
+    else if(a==6)
+   {
+      printf("\nFriday"); 
+      
+   }
+    else if(a==7)
+   {
+      printf("\nSaturday"); 
+      
+   }
+      
+   
+   else
+   {
+      printf("\n Number not matched"); 
+      
+   }
+    
+    
+}
+
+void month()
+{
+    int a;
+    printf("\nEnter the number=");
+   scanf("%d",&a);
+   if(a==1)
+   {
+      printf("\nJanuary"); 
+      
+   }
+    else if(a==2)
+   {
+      printf("\n February");
+   }
+      else if(a==3)
+   {
+      printf("\nMarch"); 
+      
+   }
+    else if(a==4)
+   {
+      printf("\nApril"); 
+      
+   }
+    else if(a==5)
+   {
+      printf("\nMay"); 
+      
+   }
+    else if(a==6)
+   {
+      printf("\nJune"); 
+      
+   }
+    else if(a==7)
+   {
+      printf("\nJuly"); 
+      
+   }
+      
+   
+   else if(a==8)
+   {
+      printf("\nAugust"); 
+      
+   }
+   
+   
+   else if(a==9)
+   {
+      printf("\nSeptember"); 
+      
+   }
+   
+   else if(a==10)
+   {
+      printf("\nOctober"); 
+      
+   }
+   
+   else if(a==11)
+   {
+      printf("\nNovember"); 
+      
+   }
+   
+   else if(a==12)
+   {
+      printf("\nDecember"); 
+      
+   }
+   
+   else 
+   {
+      printf("\ndefault number"); 
+      
+   }
+    
+    
+    
+    
+}
+
+
+
+
+
+
+Output:
+
+the real value of a and b are
+  a=5 b=10
+After swaping value of a and b are 
+ a=10 b=5
+
+Enter the number=8
+
+Even number
+Enter the 3 subjects marks m1 m2 m3=77 88 99
+
+Percentage is=88.000000
+First division
+Enter total units consumed:
+ 99
+
+Electricity Bill = Rs. 74.10
+ Enter the number
+6
+
+Friday
+Enter the number=11
+
+November
+
+--------------------------------------------------------
+p :pallindrme function call
+v :vowel function call 
+a :armstrong function call 
+r :reverse number function call 
+s :sum of digit function call 
+c :count function call 
+l :calculator function call 
+f :fibonacci function call 
+i :factorial function call 
+t :three number maximum 
+
+
+
+
+
+#include<stdio.h>
+void pallindrome();
+void vowel();
+void armstrong();
+void reverse();
+void sum();
+void count();
+void calculator();
+void fibonacci();
+void factorial();
+void maximum();
+#include<stdio.h>
+int main()
+{
+    char ch;
+    printf("\nEnter your choice=");
+    scanf("%c",&ch);
+    if(ch=='p')
+    {
+       pallindrome();
+        
+    }
+    else if(ch=='v')
+    {
+        vowel();
+        
+    }
+    else if(ch=='a')
+    {
+        armstrong();
+        
+    }
+    else if(ch=='r')
+    {
+        reverse();
+        
+    }
+    else if(ch=='s')
+    {
+        sum();
+    }
+    
+    else if(ch=='c')
+    {
+        count();
+        
+    }
+    
+    else if(ch=='l')
+    {
+        calculator();
+    }
+    
+    else if(ch=='f')
+    {
+        fibonacci();
+    }
+    else if(ch=='t')
+    {
+        factorial();
+    }
+    else if(ch=='m')
+    {
+        maximum();
+    }
+    else
+    {
+        
+        printf("\n Not valid input");
+    }
+    return 0;
+}
+
+
+void pallindrome()
+{
+    int num,rem,sum=0;
+    int temp=num;
+    printf("\nEnter the number=");
+    scanf("%d",&num);
+    while(num>0)
+    {
+        rem=num%10;
+        sum=sum*10+rem;
+        num=num/10;
+    }
+    if(temp==sum)
+    {
+        printf("\nPallindrome number");
+    }
+    else
+    {
+        printf("\nNot a pallindrome number");
+    }
+}
+
+
+void vowel()
+{
+    char c;
+    printf("\nEnter the alphabet");
+    scanf(" %c",&c);
+    if(c=='a'||c=='i'||c=='o'||c=='u'||c=='e')
+    {
+        
+        printf("\n Vowel ");
+    
+    }
+    else
+    {
+        printf("\nnot vowel");
+    }
+    
+}
+
+
+void armstrong()
+{
+    int n=153;
+    int temp=n;
+    int p=0;
+    while(n>0)
+    {
+        int rem=n%10;
+        p=(p)+(rem*rem*rem);
+        n=n/10;
+    }
+    if(temp==p)
+    {
+        printf("%d number is armstrong",temp);
+        
+    }
+    else
+    {
+        printf("%d not armstrong",temp);
+        
+    }
+}
+
+
+void reverse()
+{
+    int n=19456;
+    int rem;
+    int sum=0;
+    while(n>0)
+    {
+        rem=n%10;
+        sum=sum*10+rem;
+        n=n/10;
+    }
+    printf("%d",sum);
+}
+
+
+void sum()
+{
+    
+    int a=1,n;
+    int sum=0;
+    printf("\nEnter the number=");
+    scanf("%d",&n);
+    while(a<=n)
+    {
+        sum=sum+a;
+         a++;
+    }
+    printf("sum= %d",sum);
+}
+
+
+void count()
+{
+    int n=591;
+    int count=0;
+    while(n>0)
+     {
+         count++;
+         n=n/10;
+         
+     }   
+     printf("%d",count);
+}
+
+void calculator()   
+{
+    char r;
+    printf("\nEnter your choice=");
+    scanf(" %c",&r);
+    if(r=='a')
+    {
+        int a,b;
+        printf("\nEnter the value of a=");
+        scanf("%d",&a);
+        printf("\nEnter the value of b=");
+        scanf("%d",&b);
+        int c=a+b;
+        printf("addition=%d",c);
+        
+    }
+    
+    else if(r=='s')
+     {
+    int a,b,c;
+    printf("\nEnter the value of a=");
+    scanf("%d",&a);
+    printf("\nEnter the value of b=");
+    scanf("%d",&b);
+    c=a-b;
+    printf("substraction=%d",c);
+     }
+    else if(r=='d')
+     {
+    int a,b,c;
+    printf("\nEnter the value of a=");
+    scanf("%d",&a);
+    printf("\nEnter the value of b=");
+    scanf("%d",&b);
+    c=a/b;
+    printf("division=%d",c);
+    }
+     else if(r=='m')
+     {
+    int a,b,c;
+    printf("\nEnter the value of a=");
+    scanf("%d",&a);
+    printf("\nEnter the value of b=");
+    scanf("%d",&b);
+    c=a%b;
+    printf("modular=%d",c);
+     }
+
+  else if(r=='t')
+       {
+    int a,b,c;
+    printf("\nEnter the value of a=");
+    scanf("%d",&a);
+    printf("\nEnter the value of b=");
+    scanf("%d",&b);
+    c=a*b;
+    printf("multiplication=%d",c);
+     }
+     else
+     {
+         printf("not valid");
+     }
+}
+
+void fibonacci()
+{
+    
+    int n1=0,n2=1,n3;
+    int n=5;
+    printf("\n%d %d",n1,n2);
+    for(int i =1;i<=n;i++)
+    {
+        n3=n1+n2;
+        printf(" %d",n3);
+        n1=n2;
+        n2=n3;
+    }
+    
+}
+void factorial()
+{
+    int i=1,fact=1;
+    int n;
+    printf("\nEnter the number");
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++)
+    {
+        fact=fact*i;
+    }
+        printf("factorila =%d",fact);
+        
+}
+void maximum()
+{
+     int n1,n2,n3,largest;
+   printf("\nEnter the  3 numbers= ");
+    scanf("%d %d %d", &n1,&n2,&n3);
+    if (n1>n2 && n1>n3) 
+    {
+        largest=n1;
+    }
+    if (n2>n1 && n2>n3) 
+    {
+        largest=n2;
+    }
+    if (n3>n1 && n3>n2) 
+    {
+        largest=n3;
+    }
+    printf("The largest of the three numbers is %d\n", largest);
+}
+
+
+
+
+
+
+
+
+
+
+Output:
+
+
+Enter your choice=p
+
+Enter the number=12321
+
+Not a pallindrome number
+
+========================
+Enter your choice=v
+
+Enter the alphabet m
+
+not vowel
+=========================
+
+Enter your choice=a
+153 number is armstrong
+===========================
+
+
+Enter your choice=r
+65491
+=============================
+
+Enter your choice=s
+
+Enter the number=5
+sum= 15
+===================================
+
+
+Enter your choice=c
+3
+=====================
+
+Enter your choice=l
+
+Enter your choice=a
+
+Enter the value of a=6
+
+Enter the value of b=7
+addition=13
+====================================
+
+
+Enter your choice=f
+
+0 1 1 2 3 5 8
+=========================
+
+
+Enter your choice=t
+
+Enter the number 5
+factorila =120
+======================================
+
+Enter your choice=m
+
+Enter the  3 numbers= 5 6 7
+The largest of the three numbers is 7
+
+
+
+
+**********************************************************************************************
+
+
+
+
+
+no return and argument
+
+ 
+add()
+sub()
+div()
+mod()
+multi()
+
+
+
+
+#include<stdio.h>
+void add(int a,int b);
+void sub(int a,int b);
+void divi(int a,int b);
+void mod(int a,int b);
+void multi(int a,int b);
+
+int main()
+{
+    add(5,6);
+    sub(5,6);
+    divi(5,6);
+    mod(5,6);
+    multi(5,6);
+
+    return 0;
+}
+
+void add(int a,int b)
+{
+
+    int c=a+b;
+    printf("\naddition=%d",c);
+}
+
+void sub(int a,int b)
+{
+   int  c=a-b;
+    printf("\nsubstraction=%d",c);
+}
+
+
+void divi(int a,int b)
+{
+    
+   int  c=a/b;
+    printf("\ndivision=%d",c);
+}
+void mod(int a,int b)
+{
+   
+   int c=a%b;
+    printf("\nmodular=%d",c);
+}
+
+void multi(int a,int b)
+{
+   
+    int c=a*b;
+    printf("\nmultiplication=%d",c);
+}
+
+
+
+Output:
+
+
+
+addition=11
+substraction=-1
+division=0
+modular=5
+multiplication=30
+
+---------------------------------------------------------
+swap() :swap 
+even() :even 
+marksheet()  :marksheet 
+electicity() :electicity 
+week() :week 
+month() :month   
+
+
+
+
+#include<stdio.h>
+void swap(int a,int b);
+void even(int a); 
+void marksheet(int m1,int m2,int m3);
+void electicity(int u);
+void week(int a);
+void month(int a);
+
+int main()
+{
+    
+   swap(20,10);
+   even(8); 
+    marksheet(66,77,88);
+    electicity(100);
+    week(1);
+   month(10);
+
+  return 0;
+    
+}
+void swap(int a,int b)
+{
+    
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    printf("\nAfter swaping value of a and b are \n a=%d b=%d",a,b);
+}
+void even(int a)
+{
+    if(a%2==0)
+    {
+        
+        printf("\nEven number");
+    }
+    else
+    {
+        printf("\n not even number");
+    }
+    
+}
+
+
+void marksheet(int m1,int m2,int m3)
+{
+    int total;
+    float per;
+     total=m1+m2+m3;
+    per=total/3;
+    printf("\nPercentage is=%f",per);
+    if(per>80)
+    {
+        printf("\nFirst division");
+    }
+    else if(per>75)
+    {
+        
+        printf("\nSecond DIvision");
+        
+    }
+    else if(per>45)
+    {
+        printf("\nFourth Division");
+    }
+    else
+    {
+        printf("\nfail");
+    }
+}
+
+
+void electicity(int u)
+{
+   
+    float a,t,charg;
+    if(u<= 50)
+    {
+        a=u*0.50;
+    }
+    else if(u<= 150)
+    {
+        a=25+((u-50) *0.75);
+    }
+    else if(u<= 250)
+    {
+        a=100+((u-150)*1.20);
+    }
+    else
+    {
+        a=220 +((u-250)* 1.50);
+    }
+    charg= a* 0.20;
+    t = a+ charg;
+
+    printf("\nElectricity Bill = Rs. %.2f",t);
+
+    
+}
+
+void week(int a)
+{
+    
+   if(a==1)
+   {
+      printf("\nSunday"); 
+      
+   }
+    else if(a==2)
+   {
+      printf("\n Monday");
+   }
+      else if(a==3)
+   {
+      printf("\nTuesday"); 
+      
+   }
+    else if(a==4)
+   {
+      printf("\nWednesday"); 
+      
+   }
+    else if(a==5)
+   {
+      printf("\nThrusday"); 
+      
+   }
+    else if(a==6)
+   {
+      printf("\nFriday"); 
+      
+   }
+    else if(a==7)
+   {
+      printf("\nSaturday"); 
+      
+   }
+      
+   
+   else
+   {
+      printf("\n Number not matched"); 
+      
+   }
+    
+    
+}
+
+void month(int a)
+{
+    
+   if(a==1)
+   {
+      printf("\nJanuary"); 
+      
+   }
+    else if(a==2)
+   {
+      printf("\n February");
+   }
+      else if(a==3)
+   {
+      printf("\nMarch"); 
+      
+   }
+    else if(a==4)
+   {
+      printf("\nApril"); 
+      
+   }
+    else if(a==5)
+   {
+      printf("\nMay"); 
+      
+   }
+    else if(a==6)
+   {
+      printf("\nJune"); 
+      
+   }
+    else if(a==7)
+   {
+      printf("\nJuly"); 
+      
+   }
+      
+   
+   else if(a==8)
+   {
+      printf("\nAugust"); 
+      
+   }
+   
+   
+   else if(a==9)
+   {
+      printf("\nSeptember"); 
+      
+   }
+   
+   else if(a==10)
+   {
+      printf("\nOctober"); 
+      
+   }
+   
+   else if(a==11)
+   {
+      printf("\nNovember"); 
+      
+   }
+   
+   else if(a==12)
+   {
+      printf("\nDecember"); 
+      
+   }
+   
+   else 
+   {
+      printf("\ndefault number"); 
+      
+   }
+    
+    
+    
+    
+}
+
+
+
+
+Output:
+
+
+After swaping value of a and b are
+ a=10 b=20
+Even number
+Percentage is=77.000000
+Second DIvision
+Electricity Bill = Rs. 75.00
+Sunday
+October
+
+--------------------------------------------------------
+p :pallindrme function call
+v :vowel function call 
+a :armstrong function call 
+r :reverse number function call 
+s :sum of digit function call 
+c :count function call 
+l :calculator function call 
+f :fibonacci function call 
+t :factorial function call 
+m :three number maximum 
+
+
+
+
+#include<stdio.h>
+void pallindrome(int num);
+void vowel(char c);
+void armstrong(int n);
+void reverse(int n);
+void sum(int n);
+void count(int n);
+void calculator(char r);
+void fibonacci(int n);
+void factorial(int n);
+void maximum(int n1,int n2,int n3);
+#include<stdio.h>
+int main()
+{
+    char ch;
+    printf("\nEnter your choice=");
+    scanf("%c",&ch);
+    if(ch=='p')
+    {
+       pallindrome(12321);
+        
+    }
+    else if(ch=='v')
+    {
+        vowel('m');
+        
+    }
+    else if(ch=='a')
+    {
+        armstrong(153);
+        
+    }
+    else if(ch=='r')
+    {
+        reverse(12345);
+        
+    }
+    else if(ch=='s')
+    {
+        sum(5);
+    }
+    
+    else if(ch=='c')
+    {
+        count(591);
+        
+    }
+    
+    else if(ch=='l')
+    {
+        calculator('a');
+    }
+    
+    else if(ch=='f')
+    {
+        fibonacci(5);
+    }
+    else if(ch=='t')
+    {
+        factorial(5);
+    }
+    else if(ch=='m')
+    {
+        maximum(5,6,7);
+    }
+    else
+    {
+        
+        printf("\n Not valid input");
+    }
+    return 0;
+}
+
+
+void pallindrome(int num)
+{
+    int rem,sum=0;
+    int temp=num;
+    while(num>0)
+    {
+        rem=num%10;
+        sum=sum*10+rem;
+        num=num/10;
+    }
+    if(temp==sum)
+    {
+        printf("\nPallindrome number");
+    }
+    else
+    {
+        printf("\nNot a pallindrome number");
+    }
+}
+
+
+void vowel(char c)
+{
+  
+    if(c=='a'||c=='i'||c=='o'||c=='u'||c=='e')
+    {
+        
+        printf("\n Vowel ");
+    
+    }
+    else
+    {
+        printf("\nnot vowel");
+    }
+    
+}
+
+
+void armstrong(int n)
+{
+    
+    int temp=n;
+    int p=0;
+    while(n>0)
+    {
+        int rem=n%10;
+        p=(p)+(rem*rem*rem);
+        n=n/10;
+    }
+    if(temp==p)
+    {
+        printf("%d number is armstrong",temp);
+        
+    }
+    else
+    {
+        printf("%d not armstrong",temp);
+        
+    }
+}
+
+
+void reverse(int n)
+{
+   
+    int rem;
+    int sum=0;
+    while(n>0)
+    {
+        rem=n%10;
+        sum=sum*10+rem;
+        n=n/10;
+    }
+    printf("%d",sum);
+}
+
+
+void sum(int n)
+{
+    
+    int a=1;
+    int sum=0;
+    while(a<=n)
+    {
+        sum=sum+a;
+         a++;
+    }
+    printf("sum= %d",sum);
+}
+
+
+void count(int n)
+{
+
+    int count=0;
+    while(n>0)
+     {
+         count++;
+         n=n/10;
+         
+     }   
+     printf("%d",count);
+}
+
+void calculator(char r)   
+{
+
+    if(r=='a')
+    {
+        int a,b;
+        printf("\nEnter the value of a=");
+        scanf("%d",&a);
+        printf("\nEnter the value of b=");
+        scanf("%d",&b);
+        int c=a+b;
+        printf("addition=%d",c);
+        
+    }
+    
+    else if(r=='s')
+     {
+    int a,b,c;
+    printf("\nEnter the value of a=");
+    scanf("%d",&a);
+    printf("\nEnter the value of b=");
+    scanf("%d",&b);
+    c=a-b;
+    printf("substraction=%d",c);
+     }
+    else if(r=='d')
+     {
+    int a,b,c;
+    printf("\nEnter the value of a=");
+    scanf("%d",&a);
+    printf("\nEnter the value of b=");
+    scanf("%d",&b);
+    c=a/b;
+    printf("division=%d",c);
+    }
+     else if(r=='m')
+     {
+    int a,b,c;
+    printf("\nEnter the value of a=");
+    scanf("%d",&a);
+    printf("\nEnter the value of b=");
+    scanf("%d",&b);
+    c=a%b;
+    printf("modular=%d",c);
+     }
+
+  else if(r=='t')
+       {
+    int a,b,c;
+    printf("\nEnter the value of a=");
+    scanf("%d",&a);
+    printf("\nEnter the value of b=");
+    scanf("%d",&b);
+    c=a*b;
+    printf("multiplication=%d",c);
+     }
+     else
+     {
+         printf("not valid");
+     }
+}
+
+void fibonacci(int n)
+{
+    
+    int n1=0,n2=1,n3;
+    
+    printf("\n%d %d",n1,n2);
+    for(int i =1;i<=n;i++)
+    {
+        n3=n1+n2;
+        printf(" %d",n3);
+        n1=n2;
+        n2=n3;
+    }
+    
+}
+void factorial(int n)
+{
+    int i=1,fact=1;
+    
+    for(int i=1;i<=n;i++)
+    {
+        fact=fact*i;
+    }
+        printf("factorila =%d",fact);
+        
+}
+void maximum(int n1,int n2,int n3)
+{
+     int largest;
+  
+    if (n1>n2 && n1>n3) 
+    {
+        largest=n1;
+    }
+    if (n2>n1 && n2>n3) 
+    {
+        largest=n2;
+    }
+    if (n3>n1 && n3>n2) 
+    {
+        largest=n3;
+    }
+    printf("The largest of the three numbers is %d\n", largest);
+}
+
+
+
+
+
+
+
+October:
+
+
+Enter your choice=m
+The largest of the three numbers is 7
