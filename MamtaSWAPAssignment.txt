@@ -1,0 +1,60 @@
+1)number swap with third variable 
+
+#include <stdio.h>
+int main()
+{
+    
+    int a,b,c;
+    printf("\nEnter the vaue of a=");
+    scanf("%d",&a);
+    printf("\nEnter the value of b=");
+    scanf("%d",&b);
+    printf("The real value of a and b are a=%d and b=%d",a,b);
+    c=a;
+    a=b;
+    b=c;
+    printf("\nAfter swaping value of a=%d",a);
+    printf("\nAfter swaping value of b=%d",b);
+
+    return 0;
+}
+
+OUTPUT:
+
+Enter the vaue of a=20
+
+Enter the value of b=10
+The real value of a and b are a=20 and b=10
+After swaping value of a=10
+After swaping value of b=20
+------------------------------------------------------------------------------------------
+
+2)number swap without third variable
+
+
+#include <stdio.h>
+int main()
+{
+    
+    int a,b;
+    printf("\nEnter the vaue of a=");
+    scanf("%d",&a);
+    printf("\nEnter the value of b=");
+    scanf("%d",&b);
+    printf("The real value of a and b are a=%d and b=%d",a,b);
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    printf("\nAfter swaping value of a=%d",a);
+    printf("\nAfter swaping value of b=%d",b);
+
+    return 0;
+}
+)OUTPUT:
+
+Enter the vaue of a=78
+
+Enter the value of b=90
+The real value of a and b are a=78 and b=90
+After swaping value of a=90
+After swaping value of b=78
