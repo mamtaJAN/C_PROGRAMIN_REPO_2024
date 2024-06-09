@@ -1,0 +1,424 @@
+reverse number :
+68491 
+
+19486 
+
+dry run + laptop 
+
+#include<stdio.h>
+int main(){
+    int n=68491; 
+    int rem,sum=0;
+    while(n>0){
+        rem=n%10;
+        sum=sum*10+rem;
+        n=n/10;
+    }
+    printf("%d",sum);
+    return 0;
+}
+
+Output:
+19486
+--------------------------------------------------------------
+4619 :dry run
+
+
+#include<stdio.h>
+int main(){
+    int n=4619; 
+    int rem,sum=0;
+    while(n>0){
+        rem=n%10;
+        sum=sum*10+rem;
+        n=n/10;
+    }
+    printf("%d",sum);
+    return 0;
+}
+
+Output:
+9164
+--------------------------------------------------------------
+
+9164
+
+#include<stdio.h>
+int main(){
+    int n=9164; 
+    int rem,sum=0;
+    while(n>0){
+        rem=n%10;
+        sum=sum*10+rem;
+        n=n/10;
+    }
+    printf("%d",sum);
+    return 0;
+}
+
+Output:
+4619
+------------------------------------------------------
+
+palindrome number :
+
+12321 :dry run +laptop 
+
+#include<stdio.h>
+int main(){
+    int num=12321;
+    int rem,sum=0;
+    int temp=num;
+    while(num>0){
+        rem=num%10;
+        sum=sum*10+rem;
+        num=num/10;
+    }
+    if(temp== sum){
+        printf("pallindrome number");
+    }
+    else{
+        printf("not pallindrome ");
+    }
+    return 0;
+}
+
+Output:
+pallindrome number
+--------------------------------------------------------------
+
+123421  :dry run +laptop 
+
+
+#include<stdio.h>
+int main(){
+    int num=123421;
+    int rem,sum=0;
+    int temp=num;
+    while(num>0)
+    {
+        rem=num%10;
+        sum=sum*10+rem;
+        num=num/10;
+    }
+    if(temp== sum){
+        printf("pallindrome number");
+    }
+    else{
+        printf("not pallindrome ");
+    }
+    return 0;
+}
+Output:
+not pallindrome 
+
+------------------------------------------------------
+Armstrong number :
+
+dry run + laptop 
+153 , 152 ,151 
+
+
+
+#include<stdio.h>
+int main(){
+    int num=153;
+    int rem,sum=0;
+    int temp=num;
+    while(num>0)
+    {
+        rem=num%10;
+        sum=sum+rem*rem*rem;
+        num=num/10;
+    }
+    if(temp==sum)
+    {
+        printf("armstrng number ");
+    }
+    else{
+        printf("not armstrong number");
+    }
+    return 0;
+}
+
+
+Output:
+armstrng number 
+
+
+
+
+#include<stdio.h>
+int main(){
+    int num=152;
+    int rem,sum=0;
+    int temp=num;
+    while(num>0)
+    {
+        rem=num%10;
+        sum=sum+rem*rem*rem;
+        num=num/10;
+    }
+    if(temp==sum)
+    {
+        printf("armstrng number ");
+    }
+    else{
+        printf("not armstrong number");
+    }
+    return 0;
+}
+
+Output:
+
+not armstrong number
+
+
+
+
+#include<stdio.h>
+int main(){
+    int num=151;
+    int rem,sum=0;
+    int temp=num;
+    while(num>0)
+    {
+        rem=num%10;
+        sum=sum+rem*rem*rem;
+        num=num/10;
+    }
+    if(temp==sum)
+    {
+        printf("armstrng number ");
+    }
+    else{
+        printf("not armstrong number");
+    }
+    return 0;
+}
+
+
+Output:
+
+not armstrong number
+
+
+
+-------------------------------------------------------
+neon number : 
+
+
+dry run + laptop
+
+
+#include<stdio.h>
+int main()
+{
+
+    int n, sqr, rem, sum=0;
+
+    printf("Enter Number: ");
+    scanf("%d",&n);
+
+    sqr = n*n;
+
+    while(sqr>0)
+    {
+        rem = sqr%10;
+        sum = sum+rem;
+        sqr = sqr/10;  
+    }
+
+    if(sum==n)
+        printf("%d is a neon number.\n",n);
+    else
+        printf("%d is NOT a neon number.\n",n);
+
+    return 0;
+}
+
+Output:
+
+Enter Number: 1
+1 is a neon number.
+
+
+
+-------------------------------------------------------
+perfect number : 
+
+#include<stdio.h>
+int main()  
+{  
+    int n,a=1,sum = 0;  
+  
+    printf("Enter a number\n");  
+    scanf("%d", &n);  
+  
+    while(a< n)  
+    {  
+        if(n%a== 0)  
+        {  
+            sum = sum + a;  
+        }  
+        a++;  
+    }  
+  
+    if(sum == n)  
+    {  
+        printf("\n%d is a perfect number\n", n);  
+    }  
+    else  
+    {  
+        printf("\n%d is not a perfect number\n", n);  
+    }  
+  
+    return 0;  
+}
+
+Output:
+Enter a number
+5
+
+5 is not a perfect number
+/////////
+
+Enter a number
+6
+
+6 is a perfect number
+
+-----------------------------------------------------------
+r :reverse number 
+a :Armstrong number 
+n :neon number 
+p :palindrome 
+t :perfect number 
+
+
+#include <stdio.h>
+
+int main()
+{
+    char ch;
+    printf("r :reverse number \na :Armstrong number \nn :neon number \np :palindrome\nt :perfect number"); 
+    printf("\n Enter your choice:");
+    scanf("%d",&ch);
+    if(ch=='r')
+    {
+        int n;
+        printf("\nEnter the number");
+        scanf("%d",&n);
+        int rem,sum=0;
+         while(n>0)
+         {
+        rem=n%10;
+        sum=sum*10+rem;
+        n=n/10;
+        }
+    printf("%d",sum);
+    }
+        
+    
+    
+    else if(ch=='a')
+    {
+        
+        int num;
+        printf("\nEnter the number");
+        scanf("%d",&num);
+    int rem,sum=0;
+    int temp=num;
+    while(num>0)
+    {
+        rem=num%10;
+        sum=sum+rem*rem*rem;
+        num=num/10;
+    }
+    if(temp==sum)
+    {
+        printf("armstrng number ");
+    }
+    else{
+        printf("not armstrong number");
+    }
+    }
+    else if(ch=='n')
+    {
+    
+
+
+
+    }
+    else if(ch=='p')
+    {
+       
+    }
+    else if(ch==t)
+      {
+          printf("");
+          
+      }
+      else
+      {
+          printf("Invalid choice");
+      }
+      
+    return 0;
+}
+
+
+
+
+Output:
+
+r :reverse number 
+a :Armstrong number 
+n :neon number 
+p :palindrome
+t :perfect number
+ Enter your choice:r
+
+Enter the number12345
+54321
+
+
+r :reverse number 
+a :Armstrong number 
+n :neon number 
+p :palindrome
+t :perfect number
+ Enter your choice:a
+
+Enter the number=153
+armstrng number 
+
+
+r :reverse number 
+a :Armstrong number 
+n :neon number 
+p :palindrome
+t :perfect number
+ Enter your choice:n
+Enter Number: 9
+9 is a neon number.
+
+r :reverse number 
+a :Armstrong number 
+n :neon number 
+p :palindrome
+t :perfect number
+ Enter your choice:p
+Enter the number 12321
+pallindrome number
+
+r :reverse number 
+a :Armstrong number 
+n :neon number 
+p :palindrome
+t :perfect number
+ Enter your choice:t
+Enter a number
+6
+
+6 is a perfect number
