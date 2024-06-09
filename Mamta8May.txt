@@ -1,0 +1,127 @@
+1:----Five names of Friends,fruits,city,country,Fav food.*****************
+
+#include <stdio.h>
+
+int main()
+{
+    printf("Five Friends name=\n"); 
+    printf("\n1=Mamta\n2=Madhura\n3=Vaishnavin4=\n5=Amruta\n");
+    printf("\nFive Country name=\n");  
+    printf("\n1=India\n2=Pakistan\n3=china\n4=Nepal\n5=Srilanka\n");
+    
+    printf("\nFive city name=\n"); 
+    printf("\n1=Jaipur\n2=Bangloren\n3=Delhi\n4=Mumbai\n5=hyderabad\n");
+     printf("\nFive Fav food name=\n");
+     printf("\n1=pav bhaji \n2=idali\n3=paneertikha\n4=samosa\n5=khaman\n");
+     printf("\nFive Fruits name=\n");
+     printf("\n1=Mango\n2=bananan\n3=grapes\n4=watermelain\n5=chiku\n");
+
+    return 0;
+}
+
+*************************************************************************************
+OUTPUT:-
+
+Five Friends name=
+
+1=Mamta
+2=Madhura
+3=Vaishnavin4=
+5=Amruta
+
+Five Country name=
+
+1=India
+2=Pakistan
+3=china
+4=Nepal
+5=Srilanka
+
+Five city name=
+
+1=Jaipur
+2=Bangloren
+3=Delhi
+4=Mumbai
+5=hyderabad
+
+Five Fav food name=
+
+1=pav bhaji 
+2=idali
+3=paneertikha
+4=samosa
+5=khaman
+
+Five Fruits name=
+
+1=Mango
+2=bananan
+3=grapes
+4=watermelain
+5=chiku
+*****************************************************************
+
+2)DIFFERENT CODE 3.4
+
+#include <stdio.h>
+int main()
+{
+    float a=3.4;
+    printf("%f",a);
+    return 0;
+}
+OUTPUT:-3.400000
+********************************************************************
+3)DIFFERENT CODE t
+
+#include <stdio.h>
+int main()
+{
+    char a='t';
+    printf("%c",a);
+    return 0;
+}
+
+OUTPUT:= t
+**********************************************************************
+4)DIFFERENT CODE 29
+
+#include <stdio.h>
+int main()
+{
+    int a=29;
+    printf("%d",a);
+    return 0;
+}
+OUTPUT:- 29
+
+*********************************************************************************
+5) SAME CODE 
+67
+0
+-9.8
+-3
+92
+-8.9
+
+#include <stdio.h>
+int main()
+{
+    int a=67,b=0,c=92,d=-3;
+    float e=-9.8,f=-8.9;
+    printf("%d\n%d\n%f\n%d\n%d\n%f",a,b,e,d,c,f);
+    return 0;
+}
+
+OUTPUT:=
+
+67
+0
+-9.800000
+-3
+92
+-8.900000
+
+
+
