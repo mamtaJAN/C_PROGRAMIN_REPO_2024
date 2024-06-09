@@ -1,0 +1,181 @@
+1) 34-5 
+
+#include <stdio.h>
+int main()
+{
+    int a=34,b=5;
+    int c=a-b;
+    printf("34-5 result is=%d",c);
+    return 0;
+}
+
+OUTPUT:=          34-5 result is=29
+**************************************************************************************
+
+2) 23*5 
+
+#include <stdio.h>
+int main()
+{
+    int a=23,b=5;
+    int c=a*b;
+    printf("23*5 result is= %d ",c);
+    return 0;
+}
+
+OUTPUT:             23*5 result is= 115  
+    
+****************************************************************************************
+
+3)  56/2   
+
+
+#include <stdio.h>
+int main()
+{
+    int a=56,b=2;
+    int c=a/b;
+    printf("56/2 result is= %d ",c);
+    return 0;
+}
+OUTPUT:=                          56/2 result is= 28 
+
+
+**********************************************
+
+4) 1+6+8+9  
+
+
+#include <stdio.h>
+int main()
+{
+    int a=1,b=6,c=8,d=9;
+    int e=a+b+c+d;
+    printf("1+6+8+9 result is= %d ",e);
+    return 0;
+}
+
+OUTPUT:=
+ 1+6+8+9 result is= 24 
+ 
+*********************************************************************************
+
+5)  34+67+3+89+12    
+
+
+#include <stdio.h>
+int main()
+{
+    int a=34,b=67,c=3,d=89,e=12;
+    int r=a+b+c+d+e;
+    printf("34+67+3+89+12 result is= %d ",r);
+    return 0;
+}
+
+OUTPUT:    34+67+3+89+12 result is= 205   
+
+***********************************************************************
+
+
+6) 34+(4*4)-8 
+
+#include <stdio.h>
+
+int main()
+{
+    int a=34,b=4,c=8;
+    int result=a+(b*b)-c;
+    printf("Reuslt= %d",result);
+
+    return 0;
+}
+
+
+OUTPUT:
+Reuslt= 42
+
+
+**********************************************************************
+7) 3.1*6.7-(2.2 *2.2)-5.4  
+
+#include <stdio.h>
+int main()
+{
+    float  a=3.1,b=6.7,c=2.2,d=5.4;
+    float r=a*b-(c*c)-d;
+    printf(" 3.1*6.7-(2.2 *2.2)-5.4  result is= %f",r);
+    return 0;
+}
+
+OUTPUT:= 3.1*6.7-(2.2 *2.2)-5.4  result is= 10.529999
+
+************************************************************************
+
+8) 2.3-7+(3.4*6)-2.3/2  
+
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a=7,b=6,c=2;
+    float d=2.3,e=3.4;
+    float result= d-a+(e*b)-d/c;
+    printf("Reuslt= %f",result);
+
+    return 0;
+}
+
+
+OUTPUT:
+Reuslt= 14.550002
+
+*************************************************************************
+
+
+9) 23*2-9+34    
+
+#include <stdio.h>
+
+int main()
+{
+    int a=23,b=2,c=9,d=34;
+    int result=a*b-c+d;
+    printf("Reuslt= %d",result);
+
+    return 0;
+}
+
+
+Output:
+
+Result=71
+
+
+
+************************************************************
+
+10)4.5*7+(2.3-2)+34.6
+
+#include <stdio.h>
+
+int main()
+{
+    float a=4.5,b=2.3,c=34.6;
+    int d=7,e=2;
+    int result=a*d+(b-e)+c;
+    
+    
+    printf("Reuslt= %d",result);
+
+    return 0;
+}
+
+
+
+OUTPUT:
+
+Result=66
+
+*************************************************************
