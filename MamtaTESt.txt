@@ -1,0 +1,435 @@
+
+ Question 1: Tax Calculator
+Write a Java program that calculates income tax for individuals based on the following criteria:
+
+Income <= $10,000: No tax
+$10,001 - $30,000: 10% tax
+$30,001 - $50,000: 20% tax
+Income > $50,000: 30% tax
+
+
+#include<stdio.h>
+int main()
+{
+   int n;
+   printf("enter the value of income");
+   scanf("%d",&n);
+   if(n<=10,000)
+   {
+       printf("no tax");
+      
+       
+   }************************
+   else if( n >10000 && n<30000)
+   {
+       
+       printf("10percent tax");
+       
+   }
+   else if(n >30001 && n<50000)
+   {
+       printf("20percent tax");
+       
+   }
+   else if (n >=50000)
+   {
+       printf("30percent tax");
+   }
+    return 0;
+}
+
+
+
+
+enter the value of income 5000000
+30percent tax
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+Question 2: BMI Calculator
+Create a program that calculates the Body Mass Index (BMI) based on a person's weight and height. Categorize the BMI using the following ranges:
+
+BMI < 18.5: Underweight
+18.5 <= BMI < 24.9: Normal weight
+25 <= BMI < 29.9: Overweight
+BMI >= 30: Obesity
+
+#include<stdio.h>
+int main()
+{
+   int n;
+   printf("enter the value of income");
+   scanf("%d",&n);
+   if(n<=10,000)
+   {
+       printf("no tax");
+      
+       
+   }
+   else if( n >10000 && n<30000)
+   {
+       
+       printf("10percent tax");
+       
+   }
+   else if(n >30001 && n<50000)
+   {
+       printf("20percent tax");
+       
+   }
+   else if (n >=50000)
+   {
+       printf("30percent tax");
+   }
+    return 0;
+}
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------
+#include <stdio.h>
+
+int main()
+{
+   float w,h,BMI;
+   printf("\n Enter the weight=");
+   scanf("%f",&w);
+   printf("\nEnter the height=");
+   scanf("%f",&h);
+   BMI=(w/h);
+   printf("BMI= %f",BMI);
+   if(BMI < 18.5)
+   {
+       printf("\nPerson is under weight");
+   }
+   
+   else if(BMI >= 18.5 || BMI < 24.9 )
+   {
+       printf("\n Normal weight");
+   }
+   
+   else if (BMI >= 25 || BMI < 29.9)
+   {
+       
+       printf("\n Overweight ");
+   }
+   else if(BMI >= 30)
+   {
+       
+       printf("\n Obesity");
+   }
+   else
+   {
+       
+       printf("not valid");
+   }
+    return 0;
+}
+
+ Enter the weight=85
+
+Enter the height=4
+BMI= 21.250000
+ Normal weight
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Question 3: Leap Year Checker
+Write a Java program that checks if a given year is a leap year or not.
+ Leap years are divisible by 4, but years divisible by 100 are not leap years unless they are also divisible by 400.
+
+#include <stdio.h>
+
+int main()
+{
+   int a;
+   printf("\n Enter the number year =");
+   scanf("%d",&a);
+   
+   if(a%4==0 && a%400==0)
+   {
+       printf("\n %d is leap year",a);
+   }
+   
+   else
+   {
+       printf("\n %d Is a not leap year",a);
+   }
+    return 0;
+}
+
+
+ Enter the number year =2013
+
+ 2013 Is a not leap year
+ ---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Question 4: Time of Day Greeting
+Create a program that asks for the time of day 
+(morning, afternoon, evening) and then greets the user accordingly. For example, "Good morning!" if the time is morning.
+
+#include<stdio.h>
+int main()
+{
+    int a;
+    printf("\n Enter the time ");
+    scanf("%d",&a);
+    if(a<12)
+    {
+    printf("Good morning!");
+    }
+    else if(a<=18)
+    {
+        printf("\nAfter noon");
+    }
+    else if(a<=23)
+    {
+        printf("\n Good evning");
+    }
+    else
+    {
+        printf("\nnot time");
+    }
+
+    return 0;
+}
+
+Output:
+ Enter the time 16
+
+After noon
+
+----------------------------------------------------------------------------------------------
+Question 5: Menu Selection
+Design a simple restaurant menu system that takes a customer's choice (1-3) 
+and displays the selected food item and its price. Use if-else if-else statements
+
+
+#include <stdio.h>
+
+int main()
+{
+   int a;
+   printf("\n Enter the number");
+   scanf("%d",&a);
+   if(a==1)
+   {
+       printf("\n 1:Special Thali =>Price=Rs:550/-");
+   }
+   else if(a== 2)
+   {
+        printf("\n2:PavBhaji =>Price= Rs:100/-");
+   }
+   else if(a== 3)
+   {
+       
+       printf("\n 3:MasalaDosa =>Price= Rs:200/-");
+   }
+   else
+   {
+       printf("\nThankyou");
+   }
+    return 0;
+}
+
+ Enter the number 2
+
+2:PavBhaji =>Price= Rs:100/-
+-------------------------------------------------------------------------------------------------------------
+
+Question 6: Temperature Converter
+Write a Java program to convert temperatures between Celsius and Fahrenheit. The program should ask the user for the input temperature 
+and the unit (C or F) and provide the converted temperature
+
+#include<stdio.h>
+int main()
+{
+    int n;
+    printf("\n1:Celsius and Fahrenheit.");
+    printf("\n2:Fahrenheit. and Celsius");
+    printf("\n Enter the number ");
+    scanf("%d",&n);
+    if(n==1)
+    {
+        float c,f;
+        printf("enter the celsiuos");
+        scanf("%f",&c);
+        f = (1.8 * c) + 32;
+        printf("Fahrenheit is=%f",f);
+    }
+    else if(n==2)
+    {
+        float c,f;
+        printf("enter the fehrenheit");
+        scanf("%f",&f);
+        c = (f- 32)*5/9;
+        printf("Celsius is=%f",c);
+        
+    }
+    return 0;
+}
+
+
+1:Celsius and Fahrenheit.
+2:Fahrenheit. and Celsius
+ Enter the number 2
+enter the fehrenheit 67
+Celsius is=19.444445
+-------------------------------------------------------------------------------------------------------------
+Question 7: Number Comparison
+Create a program that takes two numbers as input and uses if-else if-else statements 
+to determine and print which number is greater or if they are equal.
+
+
+
+#include <stdio.h>
+
+int main()
+{
+   int a,b;
+   printf("\n Enter the number a=");
+   scanf("%d",&a);
+   printf("\n Enter the number b=");
+   scanf("%d",&b);
+   if(a>b)
+   {
+       printf("\n a is greater than b");
+   }
+   else if(b>a)
+   {
+        printf("\nb is greter than a");
+   }
+   
+   
+   else
+   {
+       printf("\nA and b both are equal");
+   }
+    return 0;
+}
+
+
+ Enter the number a= 3
+
+ Enter the number b=3
+
+A and b both are equal
+
+------------------------------------------------------------------------------
+Question 8: Ticket Booking System
+Design a ticket booking system for a cinema that calculates 
+the ticket price based on the age of the customer. Children (age < 12) get a 50% discount, while seniors (age >= 65) get a 30% discount.
+
+#include<stdio.h>
+int main()
+{
+    int a;
+    printf("\n Enter the age ");
+    scanf("%d",&a);
+    if(a<12)
+    {
+        printf("\n children having 50 percent of discount in ticket");
+    
+    }
+    else if(a>=65)
+    {
+        printf(" \nadult having 30 percent of discount in ticket");
+    }
+    else
+    {
+        printf("not valid");
+    }
+
+    return 0;
+}
+
+
+ Enter the age 10
+
+ children having 50 percent of discount in ticket
+ ----------------------------------------------------------------------------------------------------------------------------------
+ 
+Question 9: Letter Grade Calculator
+Write a program that accepts a student's score as input and calculates their letter grade
+ using if-else if-else statements. Consider the standard letter grading system (A, B, C, D, F).
+
+#include<stdio.h>
+int main()
+{
+   float a;
+   printf("\n enter the percentage");
+   scanf("%f",&a);
+   if(a>=90)
+   {
+       
+      printf("A Grade");
+   }
+    else if(a>=80)
+   {
+       
+      printf("B Grade");
+   } 
+   else if(a>=70)
+   {
+       
+      printf("C Grade");
+   }
+   else if(a>=40)
+   {
+       
+      printf("D Grade");
+   }
+   else
+   {
+       
+       printf("F grade fail");
+   }
+    return 0;
+}
+
+
+ enter the percentage 88
+B Grade
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+Question 10: Vowel or Consonant Checker
+Create a program that takes a single alphabet character as input and checks if it is a vowel (A, E, I, O, U) or a consonant
+
+
+#include<stdio.h>
+int main()
+{
+    char c;
+    printf("\n Enter the character ");
+    scanf("%c",&c);
+    if(c=='A'|| c=='E' || c=='I'|| c=='O'|| c=='U')
+    {
+        printf("\n Character is vowel ");
+    
+    }
+    else
+    {
+        printf("\nconsonant");
+    }
+
+    return 0;
+}
+
+
+Enter the character M
+
+consonant
